@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinámicas</title>
+</head>
+<body>
+    <h1>Imagens Dinámicas</h1>
+    <p>Agora voce vai ver um exemplo de imagem que muda dependendo do tamanho da tela!</p>
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/Imagem-P.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagens/Imagem-M.png" type="image/png">
+        <img src="imagens/Imagem-G.png" alt="">
+        <p>A imprtância de uma imagem dinámica é a adaptatividade do website para computadores, tablets e telefones, sem a imagem ficar "carregada pela metade" para usar essa função, usamos a tag "picture", dentro dela, inserimos um "img" que por sua vez, colocamos primeiro a nossa maior imagem, depois, adicionamos a cima do img, um "source:media" mudamos o valor de <code>min-width</code> para <code>max-width</code> e inserimos um valor, normalmente 1025, para transformar uma imagem grande em média, e 725 para transformar uma imagem média para pequena. Após definir tudo, ainda dentro do parâmetro, teve ser inserido um "<code>type="image.png"</code> para funcionar perfeitamente.</p>
+    </picture>
+</body>
+</html>
