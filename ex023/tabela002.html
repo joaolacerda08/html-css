@@ -19,6 +19,16 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.3em;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -29,7 +39,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(54, 54, 54);
             color: white;
         }
 
@@ -41,6 +51,7 @@
         ANATOMIA PARA TABELAS GRANDE
 
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -52,6 +63,7 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
